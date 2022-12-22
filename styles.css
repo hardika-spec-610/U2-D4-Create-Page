@@ -177,7 +177,7 @@ main {
 .cards-container {
   display: flex;
   column-gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 8em;
 }
 .card-wrapper {
   max-width: 25%;
