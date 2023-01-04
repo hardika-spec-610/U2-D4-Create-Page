@@ -262,3 +262,24 @@ hr {
   height: 20px;
   margin-left: auto;
 }
+.ftr-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+.ftr-block div p {
+  font-size: 14px;
+}
+.ftr-block div ul {
+  display: flex;
+  list-style-type: none;
+}
+.ftr-block div ul li {
+  margin-inline: 1em;
+}
+.ftr-block div ul li a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 14px;
+}
