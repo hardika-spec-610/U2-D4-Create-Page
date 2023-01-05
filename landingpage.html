@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -102,156 +106,317 @@
       <main>
         <div class="container">
           <h2>Recommended to you</h2>
-          <div class="cards-container">
-            <div class="card-wrapper">
-              <img src="./assets/course-graphql.jpg" alt="graphql img" />
-              <div class="btm-card-block">
-                <h3>GraphQL: introduction to graphQL for beginners</h3>
-                <div class="class-timing-block">
-                  <img src="./assets/clock-black.svg" alt="clock icon" />
-                  <span>2h 40m</span>
-                  <img src="./assets/bar-chart.svg" alt="bar chart icon" />
-                  <span>Advance</span>
+          <div class="cards-container swiper">
+            <div class="swiper-wrapper">
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-graphql.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>GraphQL: introduction to graphQL for beginners</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>2h 40m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Advance</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">2.5</span>
+                    <span class="rating-num">(7500)</span>
+                  </div>
+                  <span class="new-value">$500</span>
+                  <span class="old-value">$600</span>
                 </div>
-                <div class="rating-block">
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <span class="rating-value">2.5</span>
-                  <span class="rating-num">(7500)</span>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-5.jpg"
+                    alt="avtar"
+                  />
+                  <span>Brooklyn Simmons</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
                 </div>
-                <span class="new-value">$500</span>
-                <span class="old-value">$600</span>
               </div>
-              <hr />
-              <div class="card-btm-wrap">
-                <img
-                  class="avatar-icon"
-                  src="./assets/avatar-5.jpg"
-                  alt="avtar"
-                />
-                <span>Brooklyn Simmons</span>
-                <img
-                  class="bookmark-icon"
-                  src="./assets/bookmark.svg"
-                  alt="bookmark icon"
-                />
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-javascript.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>A Complete Beginner's Guide to JavaScript</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>4h 10m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Advance</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">3.5</span>
+                    <span class="rating-num">(1700)</span>
+                  </div>
+                  <span class="new-value">$700</span>
+                  <span class="old-value">$850</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-1.jpg"
+                    alt="avtar"
+                  />
+                  <span>Jenny Wilson</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
+              </div>
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-node.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>Beginning Node.js, Express & MongoDB Development</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>2h 00m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">4.0</span>
+                    <span class="rating-num">(15,700)</span>
+                  </div>
+                  <span class="new-value">$800</span>
+                  <span class="old-value">$950</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-3.jpg"
+                    alt="avtar"
+                  />
+                  <span>Sina Ray</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
+              </div>
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-laravel.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>1h 00m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Beginner</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">4.5</span>
+                    <span class="rating-num">(2500)</span>
+                  </div>
+                  <span class="new-value">$170</span>
+                  <span class="old-value">$229</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-7.jpg"
+                    alt="avtar"
+                  />
+                  <span>Sobo Rikhan</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
+              </div>
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-graphql.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>GraphQL: introduction to graphQL for beginners</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>2h 40m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Advance</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">2.5</span>
+                    <span class="rating-num">(7500)</span>
+                  </div>
+                  <span class="new-value">$500</span>
+                  <span class="old-value">$600</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-5.jpg"
+                    alt="avtar"
+                  />
+                  <span>Brooklyn Simmons</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
+              </div>
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-javascript.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>A Complete Beginner's Guide to JavaScript</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>4h 10m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Advance</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">3.5</span>
+                    <span class="rating-num">(1700)</span>
+                  </div>
+                  <span class="new-value">$700</span>
+                  <span class="old-value">$850</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-1.jpg"
+                    alt="avtar"
+                  />
+                  <span>Jenny Wilson</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
+              </div>
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-node.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>Beginning Node.js, Express & MongoDB Development</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>2h 00m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Intermediate</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">4.0</span>
+                    <span class="rating-num">(15,700)</span>
+                  </div>
+                  <span class="new-value">$800</span>
+                  <span class="old-value">$950</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-3.jpg"
+                    alt="avtar"
+                  />
+                  <span>Sina Ray</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
+              </div>
+              <div class="card-wrapper swiper-slide">
+                <img src="./assets/course-laravel.jpg" alt="graphql img" />
+                <div class="btm-card-block">
+                  <h3>Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                  <div class="class-timing-block">
+                    <img src="./assets/clock-black.svg" alt="clock icon" />
+                    <span>1h 00m</span>
+                    <img src="./assets/bar-chart.svg" alt="bar chart icon" />
+                    <span>Beginner</span>
+                  </div>
+                  <div class="rating-block">
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <img src="./assets/star.svg" alt="star icon" />
+                    <span class="rating-value">4.5</span>
+                    <span class="rating-num">(2500)</span>
+                  </div>
+                  <span class="new-value">$170</span>
+                  <span class="old-value">$229</span>
+                </div>
+                <hr />
+                <div class="card-btm-wrap">
+                  <img
+                    class="avatar-icon"
+                    src="./assets/avatar-7.jpg"
+                    alt="avtar"
+                  />
+                  <span>Sobo Rikhan</span>
+                  <img
+                    class="bookmark-icon"
+                    src="./assets/bookmark.svg"
+                    alt="bookmark icon"
+                  />
+                </div>
               </div>
             </div>
-            <div class="card-wrapper">
-              <img src="./assets/course-javascript.jpg" alt="graphql img" />
-              <div class="btm-card-block">
-                <h3>A Complete Beginner's Guide to JavaScript</h3>
-                <div class="class-timing-block">
-                  <img src="./assets/clock-black.svg" alt="clock icon" />
-                  <span>4h 10m</span>
-                  <img src="./assets/bar-chart.svg" alt="bar chart icon" />
-                  <span>Advance</span>
-                </div>
-                <div class="rating-block">
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <span class="rating-value">3.5</span>
-                  <span class="rating-num">(1700)</span>
-                </div>
-                <span class="new-value">$700</span>
-                <span class="old-value">$850</span>
-              </div>
-              <hr />
-              <div class="card-btm-wrap">
-                <img
-                  class="avatar-icon"
-                  src="./assets/avatar-1.jpg"
-                  alt="avtar"
-                />
-                <span>Jenny Wilson</span>
-                <img
-                  class="bookmark-icon"
-                  src="./assets/bookmark.svg"
-                  alt="bookmark icon"
-                />
-              </div>
+            <div class="swiper-button-prev">
+              <!-- <img src="./assets/chevron_big_left.svg" alt="left slider icon" /> -->
             </div>
-            <div class="card-wrapper">
-              <img src="./assets/course-node.jpg" alt="graphql img" />
-              <div class="btm-card-block">
-                <h3>Beginning Node.js, Express & MongoDB Development</h3>
-                <div class="class-timing-block">
-                  <img src="./assets/clock-black.svg" alt="clock icon" />
-                  <span>2h 00m</span>
-                  <img src="./assets/bar-chart.svg" alt="bar chart icon" />
-                  <span>Intermediate</span>
-                </div>
-                <div class="rating-block">
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <span class="rating-value">4.0</span>
-                  <span class="rating-num">(15,700)</span>
-                </div>
-                <span class="new-value">$800</span>
-                <span class="old-value">$950</span>
-              </div>
-              <hr />
-              <div class="card-btm-wrap">
-                <img
-                  class="avatar-icon"
-                  src="./assets/avatar-3.jpg"
-                  alt="avtar"
-                />
-                <span>Sina Ray</span>
-                <img
-                  class="bookmark-icon"
-                  src="./assets/bookmark.svg"
-                  alt="bookmark icon"
-                />
-              </div>
+            <div class="swiper-button-next">
+              <!-- <img
+                src="./assets/chevron_big_right.svg"
+                alt="right slider icon"
+              /> -->
             </div>
-            <div class="card-wrapper">
-              <img src="./assets/course-laravel.jpg" alt="graphql img" />
-              <div class="btm-card-block">
-                <h3>Laravel: The Ultimate Beginner's Guide to Learn</h3>
-                <div class="class-timing-block">
-                  <img src="./assets/clock-black.svg" alt="clock icon" />
-                  <span>1h 00m</span>
-                  <img src="./assets/bar-chart.svg" alt="bar chart icon" />
-                  <span>Beginner</span>
-                </div>
-                <div class="rating-block">
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <img src="./assets/star.svg" alt="star icon" />
-                  <span class="rating-value">4.5</span>
-                  <span class="rating-num">(2500)</span>
-                </div>
-                <span class="new-value">$170</span>
-                <span class="old-value">$229</span>
-              </div>
-              <hr />
-              <div class="card-btm-wrap">
-                <img
-                  class="avatar-icon"
-                  src="./assets/avatar-7.jpg"
-                  alt="avtar"
-                />
-                <span>Sobo Rikhan</span>
-                <img
-                  class="bookmark-icon"
-                  src="./assets/bookmark.svg"
-                  alt="bookmark icon"
-                />
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
+
           <h2>Most Popular</h2>
           <div class="cards-container">
             <div class="card-wrapper">
@@ -572,5 +737,26 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".cards-container", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        loop: true,
+        fade: "true",
+        loopFillGroupWithBlank: true,
+        grabCursor: "true",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
